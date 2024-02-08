@@ -22,6 +22,6 @@ public class LeilaoController : ControllerBase
             return NoContent();
 
         return Ok(result);
-    }
 
+    }
 }
