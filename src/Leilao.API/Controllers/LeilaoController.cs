@@ -4,10 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Leilao.API.Controllers;
 
-
 [Route("[controller]")]
 [ApiController]
-public class LeilaoController : ControllerBase
+public class LeilaoController : LeilaoBaseController
 {
     [HttpGet]
     [ProducesResponseType(typeof(Auction), StatusCodes.Status200OK)]
