@@ -1,24 +1,13 @@
-﻿using Leilao.API.Entities;
-using Leilao.API.Repositories;
-using Microsoft.EntityFrameworkCore;
+﻿using Leilao.API.Contracts;
+using Leilao.API.Entities;
 
 namespace Leilao.API.UseCases.Leiloes.GetCurrent;
 
 public class GetCurrentLeilaoUseCase
 {
-    public Auction? Execute()
-    {
-        var repository = new LeilaoDbContext();
+    private readonly IAuctionRepository _repository;
 
-        return repository.Auctions
-            .Include(auction => auction.Items)
-            .FirstOrDefault(IsAuctionOpened);
-    }
+    public GetCurrentLeilaoUseCase(IAuctionRepository repository) => _repository = repository;
 
-    private bool IsAuctionOpened(Auction auction)
-    {
-        var today = DateTime.Now;
-
-        return today >= auction.Starts && today <= auction.Ends;
-    }
+    public Auction? Execute() => _repository.GetCurrent();
 }
