@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
@@ -7,7 +6,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{707F4DA4-870
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2B5B2C1A-E5CD-40E0-AF69-A1042F91FEC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leilao.API", "src\Leilao.API\Leilao.API.csproj", "{86269C55-055E-4096-81CE-20C3472D0044}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leilao.API", "src\Leilao.API\Leilao.API.csproj", "{86269C55-055E-4096-81CE-20C3472D0044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCasesTest", "tests\UseCasesTest\UseCasesTest.csproj", "{CA86EE0A-1E85-4DBE-B587-2E3B9ABE0DBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +20,17 @@ Global
 		{86269C55-055E-4096-81CE-20C3472D0044}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86269C55-055E-4096-81CE-20C3472D0044}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86269C55-055E-4096-81CE-20C3472D0044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA86EE0A-1E85-4DBE-B587-2E3B9ABE0DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA86EE0A-1E85-4DBE-B587-2E3B9ABE0DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA86EE0A-1E85-4DBE-B587-2E3B9ABE0DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA86EE0A-1E85-4DBE-B587-2E3B9ABE0DBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{86269C55-055E-4096-81CE-20C3472D0044} = {707F4DA4-870E-47EE-971B-1D7B4A7EFAB7}
+		{CA86EE0A-1E85-4DBE-B587-2E3B9ABE0DBE} = {2B5B2C1A-E5CD-40E0-AF69-A1042F91FEC3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1B1263BB-F62B-4E43-8E18-BEBE09E26B94}
